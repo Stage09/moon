@@ -1,0 +1,233 @@
+@font-face {
+  font-display: swap;
+  font-family: "Barlow";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/barlow-v12-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/bellefair-v14-latin-regular.woff2") format("woff2");
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1240px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.space-body {
+  background-image: url("../../images/space-body.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+.space-header {
+  max-width: 100%;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-header-right {
+  -webkit-backdrop-filter: blur(81.5484542847px);
+          backdrop-filter: blur(81.5484542847px);
+}
+
+.space-header-list {
+  margin-right: 130px;
+  padding: 39px 41px 39px 90px;
+  display: flex;
+  color: black;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+}
+.space-header-list a {
+  color: white;
+  font-family: Barlow Condensed;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.2px;
+  transition: all 0.4s;
+}
+.space-header-list strong {
+  color: white;
+  margin-right: 14px;
+}
+
+.space-header-hr {
+  z-index: 999;
+  max-width: 473px;
+  margin-left: 58px;
+  padding-right: 297px;
+  opacity: 0.4;
+}
+
+.space-header-list li {
+  padding: 16px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  border-bottom: 2px solid transparent;
+  color: #000;
+  transition: all 0.5s;
+}
+
+.space-header-list li:hover {
+  border-color: white;
+}
+
+.space-section-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.space-hero {
+  max-width: 450px;
+  margin-top: 251px;
+}
+
+.space-hero p:first-of-type {
+  max-width: 450px;
+  font-family: "Barlow", Condensed;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33.6px;
+  letter-spacing: 3.725px;
+  text-align: left;
+  color: #D0D6F9;
+}
+
+.space-hero h2 {
+  font-family: "Bellefair", sans-serif;
+  font-size: 150px;
+  font-weight: 400;
+  line-height: 171.9px;
+}
+
+.space-hero p:last-of-type {
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #D0D6F9;
+}
+
+.humburger-space-img {
+  display: none;
+}
+
+.space-explore-wrapper {
+  margin-top: 359px;
+  border-radius: 50%;
+  padding: 119px 64px 119px 62px;
+  background-color: white;
+  color: #0B0D17;
+  margin-bottom: 131px;
+}
+
+.space-explore-wrapper p {
+  font-family: "Bellefair", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 36.67px;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 1100px) {
+  .space-body {
+    background-image: url("../images/space-site-img.png");
+  }
+  .space-header-left {
+    margin-left: 39px;
+  }
+  .space-header-list {
+    padding: 39px 47px;
+  }
+  .space-section-wrapper {
+    margin: 0 auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  .space-hero h2 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 150px;
+  }
+  .space-hero p:first-of-type {
+    font-family: "Barlow", Condensed;
+    margin-bottom: 24px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+  .space-hero p:last-of-type {
+    max-width: 444px;
+    padding-bottom: 156px;
+    font-family: Barlow;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+  .space-explore-wrapper {
+    margin-top: 0;
+  }
+  .space-section-wrapper {
+    flex-direction: column;
+  }
+  .space-header-hr, .space-header-list li strong {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .space-body {
+    background-image: url("../../images/space-site-img.png");
+  }
+  .space-header-right {
+    display: none;
+  }
+  .humburger-space-img {
+    display: inline-block;
+  }
+  .space-hero h2 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 100px;
+    text-align: center;
+  }
+  .space-hero p:first-of-type {
+    font-family: "Barlow", Condensed;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 3.375px;
+    text-align: center;
+  }
+  .space-hero p:last-of-type {
+    font-family: "Barlow", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */
